@@ -10,22 +10,23 @@ class App(Tkinter.Tk):
     
     def initialize(self):
         self.grid()
-        self.lblC = Tkinter.Label(self, text="Graus Centígrados")
-        self.lblC.grid(column=0,row=0)
-        self.lblSep= Tkinter.Label(self, text="<-->")
-        self.lblSep.grid(column=1, row=0)          
-        self.entryC = Tkinter.Entry(self)           
-        self.entryC.grid(column=0,row=1,sticky='EW')
-        self.btnCalculaF = Tkinter.Button(self,text=u"Centígrado -> Fahrenheit",command=self.OnButtonCalculaFClick)
-        self.btnCalculaF.grid(column=0,row=3) 
+        self.titulo = Tkinter.Label(self, text="Resultado:")
+        self.titulo.grid(column=0,row=0)          
+        self.entrada = Tkinter.Entry(self)           
+        self.entrada.grid(column=0,row=1,sticky='EW')
+        self.btnUm = Tkinter.Button(self,text="1",command=self.OnButtonCalculaFClick(1))
+        self.btnUm.grid(column=0,row=2)
+        self.btnDois = Tkinter.Button(self,text="2",command=self.OnButtonCalculaFClick(2))
+        self.btnDois.grid(column=1,row=2) 
+        self.btnTres = Tkinter.Button(self,text="3",command=self.OnButtonCalculaFClick(3))
+        self.btnTres.grid(column=2,row=2) 
 
-    def OnButtonCalculaFClick(self):    
+    def OnButtonCalculaFClick(self,n):    
             #fCent= float(self.entryC.get())
             #fFar= (9.0 * fCent )/5 + 32.0 
-            self.entryC.delete(0,Tkinter.END)
-            self.entryC.insert(0,str(99))
-
+            #self.entrada.delete(0,Tkinter.END)
+            self.entrada.insert(0,str(n))
 if __name__ == "__main__":
     app = App(None)
-    app.title("Conversor C<>F")
+    app.title("..:: Calculadora ::..")
     app.mainloop()
