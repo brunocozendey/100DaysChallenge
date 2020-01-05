@@ -29,5 +29,9 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 '
 * Posso usar o próprio código do Tkinter para estudar mais: /usr/lib/python3.6/tkinter
 
+## Day 4
+
+* Descobri que colocando o lambda dentro do command e chamando a função ele consegue trocar o valor da entrada, sem precisar mexer em nada na função.
+* Sei que o self, quer dizer que estou usando um argumento, ou objeto pertencente aquela classe e se não usá-lo ele procura uma variável global, mas não entendi muito bem pq chamá-lo semrpre no argumento, tenho que pesquisar isso.
 
 

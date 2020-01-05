@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import Tkinter as tk
+
 class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App herda todas as funcionalidades da classe padrão.
     def __init__(self,parent):
         tk.Tk.__init__(self,parent) # Chamando o construtor da classe pai, Tkinter.Tk.__init__())
@@ -13,32 +14,61 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.grid()
         self.titulo = tk.Label(self, text="Resultado:")
         self.titulo.grid(column=0,row=0)          
-        self.entrada = tk.Entry(self)           
+        self.entrada = tk.Entry(self) 
+        self.entrada.insert(0,str(0))          
         self.entrada.grid(column=0,row=1,sticky='EW')
-        self.btnUm = tk.Button(self,text="1",command=self.OnButtonNumClick(1))
-        self.btnUm.grid(column=1,row=2)
-        self.btnDois = tk.Button(self,text="2",command=self.OnButtonNumClick(2))
-        self.btnDois.grid(column=2,row=2) 
-        self.btnTres = tk.Button(self,text="3",command=self.OnButtonNumClick(3))
-        self.btnTres.grid(column=3,row=2) 
-        self.btnQuatro = tk.Button(self,text="4",command=self.OnButtonNumClick(4))
-        self.btnQuatro.grid(column=4,row=2)
+        #self.btnUm = tk.Button(self,text="1",command=self.OnButtonNumClick(1))
+        self.btnUm = tk.Button(self,text="1",command=lambda: self.OnButtonNumClick(1))
+        self.btnUm.grid(column=3,row=4)
+        self.btnDois = tk.Button(self,text="2",command=lambda: self.OnButtonNumClick(2))
+        self.btnDois.grid(column=2,row=4) 
+        self.btnTres = tk.Button(self,text="3",command=lambda: self.OnButtonNumClick(3))
+        self.btnTres.grid(column=1,row=4) 
+        self.btnQuatro = tk.Button(self,text="4",command=lambda: self.OnButtonNumClick(4))
+        self.btnQuatro.grid(column=3,row=3)
+        self.btnCinco = tk.Button(self,text="5",command=lambda: self.OnButtonNumClick(5))
+        self.btnCinco.grid(column=2,row=3)
+        self.btnSeis = tk.Button(self,text="6",command=lambda: self.OnButtonNumClick(6))
+        self.btnSeis.grid(column=1,row=3)
+        self.btnSete = tk.Button(self,text="7",command=lambda: self.OnButtonNumClick(7))
+        self.btnSete.grid(column=3,row=2)
+        self.btnOito = tk.Button(self,text="8",command=lambda: self.OnButtonNumClick(8))
+        self.btnOito.grid(column=2,row=2)
+        self.btnNove = tk.Button(self,text="9",command=lambda: self.OnButtonNumClick(9))
+        self.btnNove.grid(column=1,row=2)
+        self.btnZero = tk.Button(self,text="0",command=lambda: self.OnButtonNumClick(0))
+        self.btnZero.grid(column=2,row=5)
 
-        self.btnIgual = tk.Button(self, text="=", command=self.OnButtonIgualClick())
-        self.btnIgual.grid(column=1, row=3)
+        self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
+        self.btnIgual.grid(column=1, row=6)
+
+        self.btnClr = tk.Button(self, text="CLR", command=lambda:self.OnButtonClrClick())
+        self.btnClr.grid(column=0, row=2)
+
 
         self.btnSair = tk.Button(self, text="Sair", fg ="gray", bg="red", command=self.destroy)
-        self.btnSair.grid(column=0, row=5)
-
+        self.btnSair.grid(column=0, row=8)
+        
     def OnButtonNumClick(self,n):    
         #fCent= float(self.entryC.get())
         #fFar= (9.0 * fCent )/5 + 32.0 
-        self.entrada.delete(0,tk.END)
-        self.entrada.insert(0,str(n))
+        #self.entrada.delete(0,tk.END)
+        value = int(self.entrada.get())
+        if value == 0:
+            self.entrada.delete(0,tk.END)
+            self.entrada.insert(tk.END,str(n))
+        else:
+            self.entrada.insert(tk.END,str(n))
+        
     def OnButtonIgualClick(self):
         a = self.entrada.get()
         self.entrada.delete(0,tk.END)
-        self.entrada.insert(0,str(a*2))
+        self.entrada.insert(0,str(a))
+
+    def OnButtonClrClick(self):
+        self.entrada.delete(0,tk.END)
+        self.entrada.insert(0,str(0))
+
 
 if __name__ == "__main__":
     app = App(None)
