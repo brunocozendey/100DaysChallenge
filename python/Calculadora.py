@@ -50,9 +50,6 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnSair.grid(column=0, row=8)
         
     def OnButtonNumClick(self,n):    
-        #fCent= float(self.entryC.get())
-        #fFar= (9.0 * fCent )/5 + 32.0 
-        #self.entrada.delete(0,tk.END)
         value = int(self.entrada.get())
         if value == 0:
             self.entrada.delete(0,tk.END)
