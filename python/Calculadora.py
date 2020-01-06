@@ -4,6 +4,7 @@
 import Tkinter as tk
 
 class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App herda todas as funcionalidades da classe padrão.
+    mem = 0
     def __init__(self,parent):
         tk.Tk.__init__(self,parent) # Chamando o construtor da classe pai, Tkinter.Tk.__init__())
         self.parent = parent # Para acessar o pai de um objeto, é uma boa técnica salvar uma referencia ao pai.
@@ -39,6 +40,12 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnZero = tk.Button(self,text="0",command=lambda: self.OnButtonNumClick(0))
         self.btnZero.grid(column=2,row=5)
 
+        self.btnSoma = tk.Button(self, text="+", command=lambda: self.OnButtonOperClick("+"))
+        self.btnSoma.grid(column=2, row=6)
+
+        self.btnSubtracao = tk.Button(self, text="-", command=lambda: self.OnButtonOperClick("-"))
+        self.btnSubtracao.grid(column=3, row=6)
+
         self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
         self.btnIgual.grid(column=1, row=6)
 
@@ -50,21 +57,32 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnSair.grid(column=0, row=8)
         
     def OnButtonNumClick(self,n):    
-        value = int(self.entrada.get())
-        if value == 0:
-            self.entrada.delete(0,tk.END)
-            self.entrada.insert(tk.END,str(n))
+        value = self.entrada.get()
+        if value.isdigit():
+            if int(value) == 0:
+                self.entrada.delete(0,tk.END)
+                self.entrada.insert(tk.END,str(n))
+            else:
+                self.entrada.insert(tk.END,str(n))
         else:
             self.entrada.insert(tk.END,str(n))
+
         
     def OnButtonIgualClick(self):
         a = self.entrada.get()
         self.entrada.delete(0,tk.END)
         self.entrada.insert(0,str(a))
+        #Implementar o claculo de expressão, terá que ser feito por partes, pensei em fazer como vetor.
 
     def OnButtonClrClick(self):
         self.entrada.delete(0,tk.END)
         self.entrada.insert(0,str(0))
+
+    def OnButtonOperClick(self,operador):
+        #if mem != 0:
+            #mem = int(self.entrada.get())
+            #result = mem +  
+        self.entrada.insert(tk.END,operador)
 
 
 if __name__ == "__main__":
