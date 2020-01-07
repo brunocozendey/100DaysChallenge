@@ -41,3 +41,8 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Resolver a questão de operadores em sequencia e também operação com zero que deve dar zero. 
 
 ## Day 6
+
+* Resolvido o problema do zero a esquerda.
+* Resolvido não colocar dois operadores em sequência.
+* Botão de igual resolvendo a equação no display, utilizando função eval.
+* Estudar melhor a função eval.
