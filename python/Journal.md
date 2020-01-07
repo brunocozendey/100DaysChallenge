@@ -39,3 +39,5 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Adicionei a operação de soma e subtração
 * Preciso acertar a questão da expressão
 * Resolver a questão de operadores em sequencia e também operação com zero que deve dar zero. 
+
+## Day 6
