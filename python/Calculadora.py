@@ -59,11 +59,19 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
     def OnButtonNumClick(self,n):    
         value = self.entrada.get()
         if value.isdigit():
-            if int(value) == 0:
-                self.entrada.delete(0,tk.END)
-                self.entrada.insert(tk.END,str(n))
-            else:
-                self.entrada.insert(tk.END,str(n))
+            if n == 0:
+                if (value[-1] in ["+","-","/","*"]): # para remover o zero a esquerda
+                    self.entrada.delete(0,tk.END)
+                    self.entrada.insert(tk.END,str(value))
+                else:
+                    self.entrada.insert(tk.END,str(n))
+                
+            else:    
+                if int(value) == 0:
+                    self.entrada.delete(0,tk.END)
+                    self.entrada.insert(tk.END,str(n))
+                else:
+                    self.entrada.insert(tk.END,str(n))
         else:
             self.entrada.insert(tk.END,str(n))
 
@@ -71,8 +79,9 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
     def OnButtonIgualClick(self):
         a = self.entrada.get()
         self.entrada.delete(0,tk.END)
-        self.entrada.insert(0,str(a))
+        self.entrada.insert(0,eval(a)) #eval() resolve qualquer tipo de equação.
         #Implementar o claculo de expressão, terá que ser feito por partes, pensei em fazer como vetor.
+        
 
     def OnButtonClrClick(self):
         self.entrada.delete(0,tk.END)
@@ -81,8 +90,13 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
     def OnButtonOperClick(self,operador):
         #if mem != 0:
             #mem = int(self.entrada.get())
-            #result = mem +  
-        self.entrada.insert(tk.END,operador)
+            #result = mem +
+        value = self.entrada.get()
+        if (value[-1] in ["+","-","/","*"]):
+            self.entrada.delete(0,tk.END)
+            self.entrada.insert(0,value)
+        else:
+            self.entrada.insert(tk.END,operador)
 
 
 if __name__ == "__main__":
