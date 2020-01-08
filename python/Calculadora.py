@@ -19,6 +19,7 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.entrada.insert(0,str(0))          
         self.entrada.grid(column=0,row=1,sticky='EW')
         #self.btnUm = tk.Button(self,text="1",command=self.OnButtonNumClick(1))
+
         self.btnUm = tk.Button(self,text="1",command=lambda: self.OnButtonNumClick(1))
         self.btnUm.grid(column=3,row=4)
         self.btnDois = tk.Button(self,text="2",command=lambda: self.OnButtonNumClick(2))
@@ -45,7 +46,6 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
 
         self.btnSoma = tk.Button(self, text="+", command=lambda: self.OnButtonOperClick("+"))
         self.btnSoma.grid(column=2, row=6)
-
         self.btnSubtracao = tk.Button(self, text="-", command=lambda: self.OnButtonOperClick("-"))
         self.btnSubtracao.grid(column=3, row=6)
 
