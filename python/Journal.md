@@ -46,3 +46,5 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Resolvido não colocar dois operadores em sequência.
 * Botão de igual resolvendo a equação no display, utilizando função eval.
 * Estudar melhor a função eval.
+
+## Day 7
