@@ -50,4 +50,9 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 
 ## Day 7
 
-* 
+* Inseri as operaçõe de divisão e multiplicação
+* Preciso ajustar o layout para ficar com os numeros abaixo do visor. Par isso precisarei criar 2 frames, pois não posso misturar o grid
+    e o Pack, eles irão concorrer e não vai funcionar.
+* Adicionei a função de ponto para trabalhar com números reais.
+* Adcionei um try no eval() para casos em que a expressão esteja mal formatada.
+* Finalizar questão de layout que não é tanto o foco do meu aprendizado e inserir parentisis. 
