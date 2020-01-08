@@ -40,17 +40,26 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnZero = tk.Button(self,text="0",command=lambda: self.OnButtonNumClick(0))
         self.btnZero.grid(column=2,row=5)
 
+        self.btnSoma = tk.Button(self, text=" . ", command=lambda: self.OnButtonOperClick("."))
+        self.btnSoma.grid(column=1, row=5)
+
         self.btnSoma = tk.Button(self, text="+", command=lambda: self.OnButtonOperClick("+"))
         self.btnSoma.grid(column=2, row=6)
 
         self.btnSubtracao = tk.Button(self, text="-", command=lambda: self.OnButtonOperClick("-"))
         self.btnSubtracao.grid(column=3, row=6)
 
+        self.btnSubtracao = tk.Button(self, text="*", command=lambda: self.OnButtonOperClick("*"))
+        self.btnSubtracao.grid(column=2, row=7)
+
+        self.btnSubtracao = tk.Button(self, text="/", command=lambda: self.OnButtonOperClick("/"))
+        self.btnSubtracao.grid(column=3, row=7)
+
         self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
         self.btnIgual.grid(column=1, row=6)
 
         self.btnClr = tk.Button(self, text="CLR", command=lambda:self.OnButtonClrClick())
-        self.btnClr.grid(column=0, row=2)
+        self.btnClr.grid(column=1, row=1)
 
 
         self.btnSair = tk.Button(self, text="Sair", fg ="gray", bg="red", command=self.destroy)
@@ -60,7 +69,7 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         value = self.entrada.get()
         if value.isdigit():
             if n == 0:
-                if (value[-1] in ["+","-","/","*"]): # para remover o zero a esquerda
+                if (value[-1] in ["+","-","/","*","."]): # para remover o zero a esquerda
                     self.entrada.delete(0,tk.END)
                     self.entrada.insert(tk.END,str(value))
                 else:
@@ -79,7 +88,10 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
     def OnButtonIgualClick(self):
         a = self.entrada.get()
         self.entrada.delete(0,tk.END)
-        self.entrada.insert(0,eval(a)) #eval() resolve qualquer tipo de equação.
+        try:
+            self.entrada.insert(0,eval(a)) #eval() resolve qualquer tipo de equação.
+        except:
+            self.entrada.insert(0,"Err")
         #Implementar o claculo de expressão, terá que ser feito por partes, pensei em fazer como vetor.
         
 
@@ -92,7 +104,7 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
             #mem = int(self.entrada.get())
             #result = mem +
         value = self.entrada.get()
-        if (value[-1] in ["+","-","/","*"]):
+        if (value[-1] in ["+","-","/","*","."]):
             self.entrada.delete(0,tk.END)
             self.entrada.insert(0,value)
         else:

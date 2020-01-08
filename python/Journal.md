@@ -1,6 +1,6 @@
 # Journal
 ## Introdução
-Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 dias de programação.
+Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 dias de programação em Python.
 
 ## Day 1
 
@@ -15,6 +15,7 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Comecei o código de uma calculadora. 
 
 ## Day 3
+
 * Tomei algumas notas do manual do python
 
 '
@@ -48,3 +49,5 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Estudar melhor a função eval.
 
 ## Day 7
+
+* 
