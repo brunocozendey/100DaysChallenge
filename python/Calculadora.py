@@ -55,8 +55,14 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnSubtracao = tk.Button(self, text="/", command=lambda: self.OnButtonOperClick("/"))
         self.btnSubtracao.grid(column=3, row=7)
 
-        self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
+        self.btnIgual = tk.Button(self, text=")", command=lambda: self.OnButtonOperClick(")"))
         self.btnIgual.grid(column=1, row=6)
+
+        self.btnIgual = tk.Button(self, text="(", command=lambda: self.OnButtonOperClick("("))
+        self.btnIgual.grid(column=1, row=6)
+
+        self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
+        self.btnIgual.grid(column=3, row=5)
 
         self.btnClr = tk.Button(self, text="CLR", command=lambda:self.OnButtonClrClick())
         self.btnClr.grid(column=1, row=1)

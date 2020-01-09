@@ -56,3 +56,7 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Adicionei a função de ponto para trabalhar com números reais.
 * Adcionei um try no eval() para casos em que a expressão esteja mal formatada.
 * Finalizar questão de layout que não é tanto o foco do meu aprendizado e inserir parentisis. 
+
+## Day 8
+
+* 
