@@ -55,10 +55,10 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnSubtracao = tk.Button(self, text="/", command=lambda: self.OnButtonOperClick("/"))
         self.btnSubtracao.grid(column=3, row=7)
 
-        self.btnIgual = tk.Button(self, text=")", command=lambda: self.OnButtonOperClick(")"))
+        self.btnIgual = tk.Button(self, text=")", command=lambda: self.OnButtonNumClick(")"))
         self.btnIgual.grid(column=1, row=7)
 
-        self.btnIgual = tk.Button(self, text="(", command=lambda: self.OnButtonOperClick("("))
+        self.btnIgual = tk.Button(self, text="(", command=lambda: self.OnButtonNumClick("("))
         self.btnIgual.grid(column=1, row=6)
 
         self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
@@ -67,6 +67,8 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.btnClr = tk.Button(self, text="CLR", command=lambda:self.OnButtonClrClick())
         self.btnClr.grid(column=1, row=1)
 
+        self.btnBksp = tk.Button(self, text="<-", command=lambda:self.OnButtonBkspClick())
+        self.btnBksp.grid(column=2, row=1)
 
         self.btnSair = tk.Button(self, text="Sair", fg ="gray", bg="red", command=self.destroy)
         self.btnSair.grid(column=0, row=8)
@@ -101,6 +103,15 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         #Implementar o claculo de expressão, terá que ser feito por partes, pensei em fazer como vetor.
         
 
+    def OnButtonBkspClick(self):
+        value = self.entrada.get()
+        if len(value) == 1:
+            self.entrada.delete(0,tk.END)
+            self.entrada.insert(0,str(0))
+        else:
+            self.entrada.delete(0,tk.END)
+            self.entrada.insert(0,value[:-1])
+    
     def OnButtonClrClick(self):
         self.entrada.delete(0,tk.END)
         self.entrada.insert(0,str(0))

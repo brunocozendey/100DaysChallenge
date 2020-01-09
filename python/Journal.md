@@ -59,4 +59,14 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 
 ## Day 8
 
-* 
+* Adicionado parentesis.
+* Adicionado Backspace.
+* Reposicionei botões.
+* Estudo Tkinter
+    '
+    Tk/Tcl são partes integrais do Python, possui uma fermanta para criação da layouts de janela robusta e independente, através do pacote tkinter, e suas extensões tkinter.tix e tkinter.ttk
+    O tkinter é uma pequena camada  orientada a objetos sobre o Tcl/Tk. Para usar  o Tkinter náo precisa escrever código Tcl, mas precisará consultar a documentação do Tk e ocasionalemnte do Tcl. o Tkinter é uma série de wrappers que implementa os widgets do Tk como classes em Python. E os módulos internos do _tkinter fornecem um mecanismo seguro para o pyhon interagir com o Tcl.
+
+    Além do Tk existem outros pacotes de GUI disponíveis para Python.
+
+    ... (CONTINUAR EM Quick Look Tcl/Tk)
