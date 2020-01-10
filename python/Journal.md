@@ -78,9 +78,16 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 >    A classe Tk foi pensada para ser instanciada apenas uma vez na aplicação. Os programadores podem não instanciar uma explicita, o sistema cria uma independente de qualquer outra classe ser instanciada. 
 >    A classe widget não foi criada para ser instanciada, foi criada apenas para as subclasses criarem widgets reais. No c++ seria uma classe abstrata. 
 >    O ideal para trabalhar com esse pacote é conhecer algumas passagens de Tk e como identificar as varias partes do comando TK. (https://docs.python.org/3/library/tkinter.html#tkinter-basic-mapping)
-
->   Os sc 
-
+>   Os scripts Tk são programas Tcl, isto é, são apenas listas de tokens separada por espaços. O Tk Widget é apenas uma classe, as opções ajudam a configurá-los e as ações tornam as coisas úteis. 
+> Para criar um Widget no Tk, o comando tem a seguinte forma:
+>  - classCommand newPathname options
+> **classCommand**: Tipo do widget (botão, label, menu, etc..)
+> **newPathname**: É o novo nome para o Widget, todos os nomes no Tk devem ser únicos. Funcionam igual a um arquivo em um sistema de arquivos. O widget do nível mais alto é o root, é chamado pelo '.' (periods) e seus filhos são delimitados por mais periods. Por exemplo: .myApp.controlPanel.okButton, pode ser o nome de um Widget.
+> **options**: Configura a aparência de um widget e em alguns casos seu comportamento. As opções vem em forma de lista de flgs e valores. Flags são preceddas por '-', como em comandos Unix, e valores são colocados entre aspas duplas se for mais de uma palavra.
+> Ex: button.fred -fg red -text "Olá mundo"
+> Uma vez criado o pathname para o widget se torna um novo comando. Este novo comando é permitido ter um novo widget para gerar alguma ação. Em C, seria expresso como someAction(fred, someOption), em C++, expressaria algo do tipo fred.someAction(someOption), em Tk seria:
+> - .fred someAction someOptions
+> Notar que o nome do objeto fred inicia com um ponto. Como experado os valores para someAction dependerá da class do widget: .fre disable funciona se fred for um botão, mas não funciona se fosse um label. Os valores válidos para someOption são dependentes da ação. Algumas ações como disable, não precisam de argumentos, outras como o comando delete em entradas de texto, precisam de argumentos específicos sobre qual parte do texto quer que delete.
 
 * 
 
