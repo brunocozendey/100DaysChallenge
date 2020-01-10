@@ -73,7 +73,15 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 
 ## Day 9
 
-* A 
+* Quick Look TCL/TK 
+> As classes tem o objetivo de organizar certas funções sobre um            namespace. Elas não foram criadas para serem instanciadas de forma          independente.
+>    A classe Tk foi pensada para ser instanciada apenas uma vez na aplicação. Os programadores podem não instanciar uma explicita, o sistema cria uma independente de qualquer outra classe ser instanciada. 
+>    A classe widget não foi criada para ser instanciada, foi criada apenas para as subclasses criarem widgets reais. No c++ seria uma classe abstrata. 
+>    O ideal para trabalhar com esse pacote é conhecer algumas passagens de Tk e como identificar as varias partes do comando TK. (https://docs.python.org/3/library/tkinter.html#tkinter-basic-mapping)
+
+>   Os sc 
+
+
 * 
 
 
