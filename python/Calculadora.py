@@ -4,12 +4,12 @@
 import Tkinter as tk
 
 class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App herda todas as funcionalidades da classe padrão.
-    mem = 0
     def __init__(self,parent):
         tk.Tk.__init__(self,parent) # Chamando o construtor da classe pai, Tkinter.Tk.__init__())
         self.parent = parent # Para acessar o pai de um objeto, é uma boa técnica salvar uma referencia ao pai.
         self.initialize()  #no método initialize são criados os demais objetos que serão apresentados na tela, inciailiza as variáveis 
                             #globais (irc..), o hardware caso necessário, etc..
+        
     
     def initialize(self): #widgets que serão apresentados na tela
         self.grid()
@@ -18,7 +18,6 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.entrada = tk.Entry(self) 
         self.entrada.insert(0,str(0))          
         self.entrada.grid(column=0,row=1,sticky='EW')
-        #self.btnUm = tk.Button(self,text="1",command=self.OnButtonNumClick(1))
 
         self.btnUm = tk.Button(self,text="1",command=lambda: self.OnButtonNumClick(1))
         self.btnUm.grid(column=3,row=4)
@@ -117,9 +116,6 @@ class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App her
         self.entrada.insert(0,str(0))
 
     def OnButtonOperClick(self,operador):
-        #if mem != 0:
-            #mem = int(self.entrada.get())
-            #result = mem +
         value = self.entrada.get()
         if (value[-1] in ["+","-","/","*","."]):
             self.entrada.delete(0,tk.END)

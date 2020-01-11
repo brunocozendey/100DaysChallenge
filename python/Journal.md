@@ -91,6 +91,10 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 
 ## Day 10
 
-* 
+* Mapeamento básico Tk no Tkinter 
+> O comando de Class no TK corresponde aos construtores de classe no Tkinter.
+> button .fred ====> fred = Button()
+> A configuração de opções no Tk são dadas em listas de tags refinadas seguidas por seus valores. No Tkinter, opções são especficadas como argumentos chaves no contrutor de instância e os argumntos chaves para configurar chamadas ou os indices de instâncias, no estilo do dicionário, para estabelecer instâncias. 
+> No Tk para executar a ação no Widget, use o nome do widget como comando,seguido pelo nome da ação.  
 
 
