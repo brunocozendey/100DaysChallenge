@@ -89,6 +89,8 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > - .fred someAction someOptions
 > Notar que o nome do objeto fred inicia com um ponto. Como experado os valores para someAction dependerá da class do widget: .fre disable funciona se fred for um botão, mas não funciona se fosse um label. Os valores válidos para someOption são dependentes da ação. Algumas ações como disable, não precisam de argumentos, outras como o comando delete em entradas de texto, precisam de argumentos específicos sobre qual parte do texto quer que delete.
 
+## Day 10
+
 * 
 
 
