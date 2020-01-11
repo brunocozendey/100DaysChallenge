@@ -95,6 +95,12 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > O comando de Class no TK corresponde aos construtores de classe no Tkinter.
 > button .fred ====> fred = Button()
 > A configuração de opções no Tk são dadas em listas de tags refinadas seguidas por seus valores. No Tkinter, opções são especficadas como argumentos chaves no contrutor de instância e os argumntos chaves para configurar chamadas ou os indices de instâncias, no estilo do dicionário, para estabelecer instâncias. 
-> No Tk para executar a ação no Widget, use o nome do widget como comando,seguido pelo nome da ação.  
+> No Tk para executar a ação no Widget, use o nome do widget como comando,seguido pelo nome da ação.  In Tinker nós chamados métodos na classe da instancia para invocar ações no widget. As ações (métodos) que um widget pode executar estão listadas em tkinter/__init__.py
+> Para dar um widget ao packer(gerenciador de geometria), é preciso chamar o pack com argumentos opcionais. In Tkinter, a classe pack possui todas as funcionalidade e as várias formas do comando pack são implementadas como métodos. Todo os widgets in tkinter são subclasses do Packer e implementa todos os métodos. Ver o tkinter.tix(https://docs.python.org/3/library/tkinter.tix.html#module-tkinter.tix) para documentação adicional do Form Geometry manager. 
+
+* Como Tk e Tkinter se relacionam
+> Seguindo uma avaliação top down.
+> App(Python): uma aplicação python faz uma chamado ao tkinter.
+> tkinter (Python Package): chama um botão por exemplo, implementado no tkinter package, que é escrito em python. Essa função de Python irá  
 
 
