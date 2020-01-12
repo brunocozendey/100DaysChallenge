@@ -101,8 +101,29 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 * Como Tk e Tkinter se relacionam
 > Seguindo uma avaliação top down.
 > App(Python): uma aplicação python faz uma chamado ao tkinter.
-> tkinter (Python Package): chama um botão por exemplo, implementado no tkinter package, que é escrito em python. Essa função de Python irá  
+
+> tkinter (Python Package): chama um botão por exemplo, implementado no tkinter package, que é escrito em python. Essa função de Python irá analisar os comandos e argumentos e convertê-los em uma forma que faça parece que eles vieram de um Tk script ao invé de um script Python.
+
+> _tkinter(C): esse comando e seus argumetnos serão passados para uma função C no _tkinter . O "_" indica um módulo de extensão.
+
+> Wk Widgets (C e TCL): Essa função C é capaz de fazer camadas em outros módulos C, incluindo as funções C que fazem parte da biblioteca Tk. Tk é implementado em C e algo em Tcl. A parte do Tcl dos Tk widgets sáo usadas para vincular alguns comportamentos padrões aos widgets, e é executado uma vez que o pacote Tkinter do python é importado.
+
+> Tk (C):  parte Tk dos Tk Widgets implementa o mapeamnto final para ..
+
+> Xlib(C): A biblioteca xLib desenha os gráficos na tela. 
 
 ## Day 11
 
-* 
+* Referencias úteis
+> O controle de opçẽs como cor e larguda da borda, pode ser feito de três formas:
+> * no momento de criação do objeto
+> fred = Button(self, fg="red", bg = "blue")
+> * Após a criaçào do objeto:
+> fred["fg"] = "red"
+> fred["bg"] = "blue"
+> * Utilizando o método config(), para atualizar múltiplos atributos, depois da criação do objeto.
+> fred.config(fg="red", bg = "blue")
+
+> Para uma explicação maior sobre as opções o ideal é ver o manual do Tk para cada Widget. 
+> As páginas man listam os "STANDARD OPTIONS" e "WIDGET SPECIFIC OPTIONS" para cada widget. O primeiro é uma lista de opções que sáo comuns em vários widgets, o segundo são opções únicas referentes de cada widget.As opções padrão dos widgets estao: https://manpages.debian.org/options(3)
+
