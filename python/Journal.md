@@ -127,3 +127,4 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > Para uma explicação maior sobre as opções o ideal é ver o manual do Tk para cada Widget. 
 > As páginas man listam os "STANDARD OPTIONS" e "WIDGET SPECIFIC OPTIONS" para cada widget. O primeiro é uma lista de opções que sáo comuns em vários widgets, o segundo são opções únicas referentes de cada widget.As opções padrão dos widgets estao: https://manpages.debian.org/options(3)
 
+## Day 12  
