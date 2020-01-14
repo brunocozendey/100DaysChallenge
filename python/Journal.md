@@ -126,5 +126,12 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 
 > Para uma explicação maior sobre as opções o ideal é ver o manual do Tk para cada Widget. 
 > As páginas man listam os "STANDARD OPTIONS" e "WIDGET SPECIFIC OPTIONS" para cada widget. O primeiro é uma lista de opções que sáo comuns em vários widgets, o segundo são opções únicas referentes de cada widget.As opções padrão dos widgets estao: https://manpages.debian.org/options(3)
+> Não há distinção entre as  opções padrões e específicas de um widget, feita neste documento. Algumas opções não se aplicam a alguns tipos de widgets. Se um widget responde a uma opção particular, ela depende da classe do widget. Botões tem a opção comando, labels não. 
+> A opção suportada por um dado widget são listadas na man page do widget, ou podem ser perguntadas utilizando a chamada config() utilizado sem argumentos, ou chamando keys() no widget. O valor de retorno dessa chamada será um dicionário nos quais as chaves são os nomes das opções como uma string e esses valores são 5-tuplas.
+> Algumas opções, como bg são sinônimos para opções comuns para nomes grandes. Passando o nome do método config() de uma opção curta retornará uma 2-nupla, não 5-tupla. A 2-tupla passada de volta contém o ome do sin^nimo e da opção real.
+* Exemplo:
+> print(fred.config())
 
 ## Day 12  
+
+* O Packer
