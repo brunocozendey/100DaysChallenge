@@ -146,3 +146,14 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > fred.pack(expand=1)
 
 ## Day 13
+* Opções do Packer
+> + infos packer: MAN pages e pag 183 do livro do Ousterhout.
+> * anchor: Denota onde o packer será colocado e seus slave.
+> * expand: Boleano 0 ou 1
+> * fill: valores utilizados: x,y,both,none
+> * ipdax e ipday: distancia do espaçamento interno em cada lado do slave widget. 
+> * padx e pady: distância de espaçamento externa em cada lado do slave widget.
+> * side: valores utilizados: left,right, top, bottom.
+
+* Variáveis de ligação dos widgets
+
