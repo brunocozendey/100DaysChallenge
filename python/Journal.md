@@ -135,3 +135,14 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 ## Day 12  
 
 * O Packer
+> É um dos mecanimos de gerenciamento de geometria (Design) do Tk. Os gerenciadores de geometria são usados para especificar o posicionamento relativo das posições dos widgets dentro dos containers - E seus respectivos masters. Em contraste com gerenciadors mais pesados, o packer possui uma especificação mais amigável (above, to the left, filling, etc) e faz tudo funcionar e determina o lugar exeato as coordenadas.
+> O tamanho de qualquer widget é determinado pelo tamanho do "slave widget" interno. O Packer é usado para controlar onde os slaves apereceram dentro do master nos quais eles fazem parte. Você pode empacotar widgets em frames, e frames em outros frames, conseguindo obter o layout que quiser. Além disso, o layout é dinamicamente ajustado para acomodar mudanças incrementais a configuração, uma vez empacotado. 
+> Note que os widgets não aparecerão até eles terem sua geometria especificada com um gerenciador. É comum um erro iniciante, de esquecer a especificação da geometrua e se surpreender quando nada acontecer mesmo criando o widget. 
+> O pack() pode ser chamado utilizando algumas palavras chaves que o ocntrolam, onde o widget que aparece dentro do contauner, e qual o comportamento quando a janela da aplicação é redimensionada. 
+
+* Exemplos:
+> fred.pack()
+> fred.pack(side="left")
+> fred.pack(expand=1)
+
+## Day 13
