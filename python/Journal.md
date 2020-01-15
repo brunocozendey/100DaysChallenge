@@ -155,5 +155,6 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > * padx e pady: distância de espaçamento externa em cada lado do slave widget.
 > * side: valores utilizados: left,right, top, bottom.
 
+## Day 14
 * Variáveis de ligação dos widgets
 
