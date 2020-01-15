@@ -156,5 +156,11 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > * side: valores utilizados: left,right, top, bottom.
 
 ## Day 14
+
 * Variáveis de ligação dos widgets
+> O valor configurado de alguns widgets (como entrada de texto), podem ser conectados diretamente a variáveis usando opções especiais. Essas opções são:  **variable, textvariable, onvalue, offvalue e value**. Essa conexão funciona em ambos os sentidos. Se a variável mudar o widget ligado a ela será atualizado, refletindo o novo valor. 
+>Infelizmente, na implementação atual do tkinter não é possível atuar sobre uma variável do python com um um widget através das opções **variable ou textvariable**. A única forma que funciona são variáveis como subclasses de uma classe chamada **Variable** do tkinter.
+> Existem muitas subclasses da classe Variable já definidas: StringVar, IntVar, DoubleVar e BooleanVar. Para ler valor atual de alguma variável, chame o método get() e mude seu valor utilizando o método set(). Seguindo esse protocolo, o widget sempre irá seguir o valor da variável, sem necessidade de mais intervenções.
+* Ex:
+
 
