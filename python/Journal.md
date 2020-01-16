@@ -220,3 +220,4 @@ Ex:
 > * cursor: O nome padrão do cursor X, cursorfont.h, pode ser usado, sem o prefixo XC_. Por exemplo para ter um cursos de mão (XC_hand2), usa a string "hand2". Pode especifica também, um bitmap e um arquivo de máscara próprio. 
 
 
+
