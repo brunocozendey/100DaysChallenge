@@ -206,3 +206,17 @@ Ex
  
 ## Day 15
 
+* Tk tipos de opções
+> * anchor: valores válidos são pontos da bússula: "n", "ne", "e", "se", "s", "sw", "w" e "nw" e também o "center".
+> * bitmap: Existem 8 tipos de bitmpas internos: "error", "gray25", "gray50", "hourglass", "info", "questhead", "question", "warning". Para especificar o nome do arquivo do bitmap, deve-se colocar o nome completo do arquivo precidido por @:
+> * boolean: passa inteiros 1 ou 0, ou então strings "yes"ou "no".
+> * callback: É qualquer funçao em Python que não possui argumentos.
+Ex:
+> def print_it():
+>   print("Olá mundo")
+> fred["command"] = print_it
+
+> * color: As cores podem ser escolhidas com os nomes no arquivo rgb.txt, ou com strings representando os calores em 4 bits: "#RGB", 8 bits: "#RRGGBB", 12 bits: "#RRRGGGBBB" ou 16 bit: "#RRRRGGGGBBBB", onde cada letra R,G,B representa qualquer valor heaxdecimal. 
+> * cursor: O nome padrão do cursor X, cursorfont.h, pode ser usado, sem o prefixo XC_. Por exemplo para ter um cursos de mão (XC_hand2), usa a string "hand2". Pode especifica também, um bitmap e um arquivo de máscara próprio. 
+
+
