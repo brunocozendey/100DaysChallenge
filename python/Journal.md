@@ -233,5 +233,22 @@ Ex:
 * Bindings e eventos
 
 > O método biding do comando do Widget permite ver certos eventos e ter um trigger para função de callback , quando aquele evento ocorrer. A forma do método é:
-> def bind(self, sequence, func, add = '')
+> def bind(self, sequence, func, add = ''):
+
+> * sequence: é uma string que denota o alvo de cada evento. 
+> * func: é uma função python com um argumento, que é chamada quando o evento ocorre. Uma instância do evento é passada como argumento. (Funções deste tipo normalmente são chamadas de callback.)
+> * add: é opcional, '' ou '+'. Passando uma string vazia denota que esse binding é para subtituir qualquer outro binding ao qual o evento esteja associado. 
+Ex:
+> def turn_red(self,event):
+>    event.widget["activeforeground"] = "red"
+> self.button.bind("<Enter>", elf.turn_red)
+
+* O paâmetro index
+
+> Varios widgets precisam que passe um parâmetro de "index". Eles sáo usados para apontar um lugar espec[ifico no widget de teste, ou um caracter em particular em um widget de enrada, ou um item do menu em um widget menu. 
+
+> * index em widgets de entrada (index,view index, etc): tem a opção de referenciar a posição do caracter no texto exibido. Você pode usar as funções para acessar esses pontos especiais nos widget de textos.
+> * index em widgets de texto: é bem descrito no Tk man pages.
+> * index menus (menu.invoke(), menu.entryconfig(), etc): 
+
 
