@@ -215,7 +215,6 @@ Ex:
 > def print_it():
 >   print("Olá mundo")
 > fred["command"] = print_it
-
 > * color: As cores podem ser escolhidas com os nomes no arquivo rgb.txt, ou com strings representando os calores em 4 bits: "#RGB", 8 bits: "#RRGGBB", 12 bits: "#RRRGGGBBB" ou 16 bit: "#RRRRGGGGBBBB", onde cada letra R,G,B representa qualquer valor heaxdecimal. 
 > * cursor: O nome padrão do cursor X, cursorfont.h, pode ser usado, sem o prefixo XC_. Por exemplo para ter um cursos de mão (XC_hand2), usa a string "hand2". Pode especifica também, um bitmap e um arquivo de máscara próprio. 
 > * distance: As distâncias na tela, podem ser especificadas em pixels ou distâncias absolutas. Pixels são dados como números e distâncias absolutas como strings, com o caracter denotando a unidade, 'c' para centimetros, 'i' para polegadas, 'm' para milimetros e 'p' para pontos de impressão.
@@ -225,4 +224,14 @@ Ex:
 > * region: Esta é uma string com elementos delimitados por espaço, cada um é uma distância válida. 
 > * relief: determina o estilo da borda do widget. Valores válidos: "raised", "sunken", "flat", "groove" e "ridge"
 > * scrollcommand: quase sempre o set() de algum widget com scrollbar, mas pode ser qualquer método de widget que tenha um único argumento. 
+> * wrap: Deve ser um dos: "none", "char" ou "word"
+
+* Fiz alguns testes com as opções acima, utilizando cursores.
+
+## Day 16
+
+* Bindings e eventos
+
+> O método biding do comando do Widget permite ver certos eventos e ter um trigger para função de callback , quando aquele evento ocorrer. A forma do método é:
+> def bind(self, sequence, func, add = '')
 
