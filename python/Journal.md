@@ -249,6 +249,14 @@ Ex:
 
 > * index em widgets de entrada (index,view index, etc): tem a opção de referenciar a posição do caracter no texto exibido. Você pode usar as funções para acessar esses pontos especiais nos widget de textos.
 > * index em widgets de texto: é bem descrito no Tk man pages.
-> * index menus (menu.invoke(), menu.entryconfig(), etc): 
+> * index menus (menu.invoke(), menu.entryconfig(), etc): Algumas opções e métodos de menus manipual entras especificas doles. De qualquer jeito o index do menu é necessário para uma opção ou parâmetro, que deve passar em:
+> - Um inteiro que referencia numericamente a posiçõa da entrar n widget, contado do topo, iniciando em 0.
+> - a string "active", que que referencia que a posição atual abaixo do cursor. 
+> - a strig "last", se refere a o último item do menu. 
+> - Um inteiro precedido por '@', como @6, o inteiro é interpretado omo a coordenada y no sistema de coordenadas do menu. 
+> - a string "none" indica que não há entrada no menu, frequentemente usado com menu.active() para desativar todas as entradas.
+> - uma string de texto, que é um padráo comparado ao label de entrada do menu, é como se fosse varrer do topo a pate debaixo do mneu. Esse tipo de index é considerad depois de todos os outros, o que significa que encontra items etiquetados com last,active ou none, serão interpretados como os items acima. 
+
+
 
 
