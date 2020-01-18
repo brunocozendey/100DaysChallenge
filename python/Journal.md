@@ -255,7 +255,38 @@ Ex:
 > - a strig "last", se refere a o último item do menu. 
 > - Um inteiro precedido por '@', como @6, o inteiro é interpretado omo a coordenada y no sistema de coordenadas do menu. 
 > - a string "none" indica que não há entrada no menu, frequentemente usado com menu.active() para desativar todas as entradas.
-> - uma string de texto, que é um padráo comparado ao label de entrada do menu, é como se fosse varrer do topo a pate debaixo do mneu. Esse tipo de index é considerad depois de todos os outros, o que significa que encontra items etiquetados com last,active ou none, serão interpretados como os items acima. 
+> - uma string de texto, que é um padráo comparado ao label de entrada do menu, é como se fosse varrer do topo a pate debaixo do mneu. Esse tipo de index é considerad depois de todos os outros, o que significa que encontra items etiquetados com "last","active" ou "none", serão interpretados como os items acima. 
 
 ## Day 17
+
+* Images
+> Imagens de diferentes formatos podem ser criadas a patir da subclasse tkinter.Image
+> * BitmapImage para imagens com formato XBM.
+> * PhotoImage para imagens em formato PGM, PPM, GIF e PNG. 
+> O tipo da imagem é criado tanto pelo "file" quanto pela opção "data".
+> O objeto da imagem pode ser usado para qualquer widget que suporte a opção de imagem (labels, buttons, menus). Nesses casos, o Tk náo manterá a referência da imagem. QUando a última referência no Python do objeto da imagem [e deletado, os dados da imagem são deletados também, e o Tk exibirá uma caixa vazia, onde a imagem aparecia.
+> O pacote "Pillow" adiciona o suporte a outros tipos de imagem como BMP, JPEG, TIFF e Webp, entre otras.
+
+* File Handlers
+
+> O Tk te permite registrar e desregistrar uma função de callback, que pode ser chamdado do loop principal do Tk, quando é possível realizar um I/O no arquivo. Apenas um handler pode ser registrado em cada descritor de arquivo.
+Ex:
+> import tkinter
+> widget = tkinter.Tk()
+> mask = tkinter.READABLE | tkinter.WRITABLE
+> widget.tk.createfilehandler(file,mask,callbak)
+> wdget.tk.deletefilehandler(fil
+
+> Essa função não está disponível para Windows.
+
+> Como você não sabe quantos bytes estão disponíveis para leitura, não vai querer usar os métodos BufferedIOBase ou TextIOBase read() ou o readline(), já que precisam ler um número pré definido de bytes. Para sockets, o recv() ou o recvform() funcionarão corretamente, para outros arquivo usar o leitor base ou os.read(file.fileno(), maxbytecount).
+
+> * Widget.tk.createfilehandler(file, mask, func): Registra a função callback "func" do file handler. O argumento "file" pode ser um objeto com o método fileno()(file ou socket), ou um descritor de arquivo inteiro. O argumento mask é uma combinação ORed, de qualquer das três constantes abaixo. O callback é chamado na forma:
+> callback(file,mask)
+
+* Widget.tk.deletefilehandler(file): desregistrar um file handler.
+> * tkinter.READABE
+> * tkinter.WRITABLE
+> * tkinter.EXCEPTION
+
 
