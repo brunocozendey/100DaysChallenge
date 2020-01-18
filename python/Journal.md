@@ -257,6 +257,5 @@ Ex:
 > - a string "none" indica que não há entrada no menu, frequentemente usado com menu.active() para desativar todas as entradas.
 > - uma string de texto, que é um padráo comparado ao label de entrada do menu, é como se fosse varrer do topo a pate debaixo do mneu. Esse tipo de index é considerad depois de todos os outros, o que significa que encontra items etiquetados com last,active ou none, serão interpretados como os items acima. 
 
-
-
+## Day 17
 
