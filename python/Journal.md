@@ -267,13 +267,14 @@ Ex:
 > O objeto da imagem pode ser usado para qualquer widget que suporte a opção de imagem (labels, buttons, menus). Nesses casos, o Tk náo manterá a referência da imagem. QUando a última referência no Python do objeto da imagem [e deletado, os dados da imagem são deletados também, e o Tk exibirá uma caixa vazia, onde a imagem aparecia.
 > O pacote "Pillow" adiciona o suporte a outros tipos de imagem como BMP, JPEG, TIFF e Webp, entre otras.
 
-* File Handlers
-
+* File Handlers (Manioulador de arquivos)
+A temporary reference (typically a number) assigned by the operating system to a file that an application has asked it to open. The handle is used throughout the session to access the file.
+> O File Handler é uma referencia (normalmente um número), atribuído pelo sistema operacional a um arquivo que uma aplicação pediu para abrir.
 > O Tk te permite registrar e desregistrar uma função de callback, que pode ser chamdado do loop principal do Tk, quando é possível realizar um I/O no arquivo. Apenas um handler pode ser registrado em cada descritor de arquivo.
 Ex:
 > import tkinter
 > widget = tkinter.Tk()
-> mask = tkinter.READABLE | tkinter.WRITABLE
+> mask = tki\nter.READABLE | tkinter.WRITABLE
 > widget.tk.createfilehandler(file,mask,callbak)
 > wdget.tk.deletefilehandler(fil
 
