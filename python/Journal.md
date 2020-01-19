@@ -296,5 +296,6 @@ Ex:
 * Alinhei os frames do tkinter-teste.py com grid e com pack.
 * Comecei a implementar no calculadora, mas sem sucesso.
 * Estava dando o erro, pois como lá estou colocando uma classe, não sei quem seria o root.
+* Criei o calculadora 2 para testar usando 2 frames.
 
 
