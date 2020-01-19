@@ -290,4 +290,6 @@ Ex:
 > * tkinter.WRITABLE
 > * tkinter.EXCEPTION
 
+## Day 18
+
 
