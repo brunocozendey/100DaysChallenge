@@ -3,14 +3,27 @@
 
 import Tkinter as tk
 
-class App(tk.Tk): # Tkinter.tk é a classe base para a janela padrão. A App herda todas as funcionalidades da classe padrão.
-    def __init__(self,parent):
-        tk.Tk.__init__(self,parent) # Chamando o construtor da classe pai, Tkinter.Tk.__init__())
-        self.parent = parent # Para acessar o pai de um objeto, é uma boa técnica salvar uma referencia ao pai.
-        self.initialize()  #no método initialize são criados os demais objetos que serão apresentados na tela, inciailiza as variáveis 
-                            #globais (irc..), o hardware caso necessário, etc..
-        
-        
+
+root = Tk()             #cria a aplicação raiz. 
+root.title(string="..:: CALCULADORA ::..")
+
+frame1 = Frame(root)
+#frame1.pack(side=TOP, fill=X)
+frame1.grid()
+
+frame2 = Frame(root)
+#frame2.pack(side=RIGHT, fill=X)
+frame2.grid()
+mainmenu = Menu(frame1)
+root.config(menu=mainmenu)
+
+'''
+submenu=Menu(mainmenu)
+mainmenu.add_cascade(label='File',menu=submenu)
+submenu.add_command(label='Open', command=donothing)
+submenu.add_separator()
+submenu.add_command(label='Exit', command=frame1.quit)        
+'''     
     
     def initialize(self): #widgets que serão apresentados na tela
 

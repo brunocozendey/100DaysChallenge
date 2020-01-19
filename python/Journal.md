@@ -292,4 +292,9 @@ Ex:
 
 ## Day 18
 
+* Testei o uso de fram do Tkinter
+* Alinhei os frames do tkinter-teste.py com grid e com pack.
+* Comecei a implementar no calculadora, mas sem sucesso.
+* Estava dando o erro, pois como lá estou colocando uma classe, não sei quem seria o root.
+
 
