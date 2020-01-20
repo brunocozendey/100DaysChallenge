@@ -300,4 +300,6 @@ Ex:
 
 ## Day 19
 
-*  
+* Inseri menu na Calculadora
+* Criei os frames para alinhar bem os botões.
+* Finalizei a calculadora, como Calculadora2.py
