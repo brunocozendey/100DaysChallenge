@@ -1,11 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import Tkinter as tk
-
+from Tkinter import *
 
 root = Tk()             #cria a aplicação raiz. 
+
+menubar = Menu(root)
+root.config(menu=menubar)
+
 root.title(string="..:: CALCULADORA ::..")
+
+
+filemenu = Menu(menubar)
+menubar.add_cascade(label='Arquivo', menu=filemenu)
+filemenu.add_command(label='Sair', command=root.destroy)
 
 frame1 = Frame(root)
 #frame1.pack(side=TOP, fill=X)
@@ -14,8 +22,9 @@ frame1.grid()
 frame2 = Frame(root)
 #frame2.pack(side=RIGHT, fill=X)
 frame2.grid()
-mainmenu = Menu(frame1)
-root.config(menu=mainmenu)
+
+frame3 = Frame(root)
+frame3.grid()
 
 '''
 submenu=Menu(mainmenu)
@@ -24,122 +33,111 @@ submenu.add_command(label='Open', command=donothing)
 submenu.add_separator()
 submenu.add_command(label='Exit', command=frame1.quit)        
 '''     
-    
-    def initialize(self): #widgets que serão apresentados na tela
+titulo = Label(frame1, text="Resultado:")
+titulo.grid(column=0,row=0)          
+entrada = Entry(frame1) 
+entrada.insert(0,str(0))          
+entrada.grid(column=0,row=1,sticky='EW')
+btnUm = Button(frame2,text="1",command= lambda:OnButtonNumClick(1))
+btnUm.grid(column=3,row=4)
+btnDois = Button(frame2,text="2",command=lambda:OnButtonNumClick(2))
+btnDois.grid(column=2,row=4) 
+btnTres = Button(frame2,text="3",command=lambda:OnButtonNumClick(3))
+btnTres.grid(column=1,row=4) 
+btnQuatro = Button(frame2,text="4",command=lambda:OnButtonNumClick(4))
+btnQuatro.grid(column=3,row=3)
+btnCinco = Button(frame2,text="5",command=lambda:OnButtonNumClick(5))
+btnCinco.grid(column=2,row=3)
+btnSeis = Button(frame2,text="6",command=lambda:OnButtonNumClick(6))
+btnSeis.grid(column=1,row=3)
+btnSete = Button(frame2,text="7",command=lambda:OnButtonNumClick(7))
+btnSete.grid(column=3,row=2)
+btnOito = Button(frame2,text="8",command=lambda:OnButtonNumClick(8))
+btnOito.grid(column=2,row=2)
+btnNove = Button(frame2,text="9",command=lambda:OnButtonNumClick(9))
+btnNove.grid(column=1,row=2)
+btnZero = Button(frame2,text="0",command=lambda:OnButtonNumClick(0))
+btnZero.grid(column=2,row=5)
 
-        self.grid()
-        self.titulo = tk.Label(self, text="Resultado:")
-        self.titulo.grid(column=0,row=0)          
-        self.entrada = tk.Entry(self) 
-        self.entrada.insert(0,str(0))          
-        self.entrada.grid(column=0,row=1,sticky='EW')
+btnSoma = Button(frame2, text=".", command=lambda:OnButtonOperClick("."))
+btnSoma.grid(column=1, row=5)
 
-        self.btnUm = tk.Button(self,text="1",command=lambda: self.OnButtonNumClick(1))
-        self.btnUm.grid(column=3,row=4)
-        self.btnDois = tk.Button(self,text="2",command=lambda: self.OnButtonNumClick(2))
-        self.btnDois.grid(column=2,row=4) 
-        self.btnTres = tk.Button(self,text="3",command=lambda: self.OnButtonNumClick(3))
-        self.btnTres.grid(column=1,row=4) 
-        self.btnQuatro = tk.Button(self,text="4",command=lambda: self.OnButtonNumClick(4))
-        self.btnQuatro.grid(column=3,row=3)
-        self.btnCinco = tk.Button(self,text="5",command=lambda: self.OnButtonNumClick(5))
-        self.btnCinco.grid(column=2,row=3)
-        self.btnSeis = tk.Button(self,text="6",command=lambda: self.OnButtonNumClick(6))
-        self.btnSeis.grid(column=1,row=3)
-        self.btnSete = tk.Button(self,text="7",command=lambda: self.OnButtonNumClick(7))
-        self.btnSete.grid(column=3,row=2)
-        self.btnOito = tk.Button(self,text="8",command=lambda: self.OnButtonNumClick(8))
-        self.btnOito.grid(column=2,row=2)
-        self.btnNove = tk.Button(self,text="9",command=lambda: self.OnButtonNumClick(9))
-        self.btnNove.grid(column=1,row=2)
-        self.btnZero = tk.Button(self,text="0",command=lambda: self.OnButtonNumClick(0))
-        self.btnZero.grid(column=2,row=5)
+btnSoma = Button(frame2, text="+", command=lambda:OnButtonOperClick("+"))
+btnSoma.grid(column=2, row=6)
+btnSubtracao = Button(frame2, text="-", command=lambda:OnButtonOperClick("-"))
+btnSubtracao.grid(column=3, row=6)
 
-        self.btnSoma = tk.Button(self, text=" . ", command=lambda: self.OnButtonOperClick("."))
-        self.btnSoma.grid(column=1, row=5)
+btnSubtracao = Button(frame2, text="*", command=lambda:OnButtonOperClick("*"))
+btnSubtracao.grid(column=2, row=7)
 
-        self.btnSoma = tk.Button(self, text="+", command=lambda: self.OnButtonOperClick("+"))
-        self.btnSoma.grid(column=2, row=6)
-        self.btnSubtracao = tk.Button(self, text="-", command=lambda: self.OnButtonOperClick("-"))
-        self.btnSubtracao.grid(column=3, row=6)
+btnSubtracao = Button(frame2, text="/", command=lambda:OnButtonOperClick("/"))
+btnSubtracao.grid(column=3, row=7)
 
-        self.btnSubtracao = tk.Button(self, text="*", command=lambda: self.OnButtonOperClick("*"))
-        self.btnSubtracao.grid(column=2, row=7)
+btnIgual = Button(frame2, text=")", command=lambda:OnButtonNumClick(")"))
+btnIgual.grid(column=1, row=7)
 
-        self.btnSubtracao = tk.Button(self, text="/", command=lambda: self.OnButtonOperClick("/"))
-        self.btnSubtracao.grid(column=3, row=7)
+btnIgual = Button(frame2, text="(", command=lambda:OnButtonNumClick("("))
+btnIgual.grid(column=1, row=6)
 
-        self.btnIgual = tk.Button(self, text=")", command=lambda: self.OnButtonNumClick(")"))
-        self.btnIgual.grid(column=1, row=7)
+btnIgual = Button(frame2, text="=", command=lambda:OnButtonIgualClick())
+btnIgual.grid(column=3, row=5)
 
-        self.btnIgual = tk.Button(self, text="(", command=lambda: self.OnButtonNumClick("("))
-        self.btnIgual.grid(column=1, row=6)
+btnClr = Button(frame1, text="CLR", command=lambda:OnButtonClrClick())
+btnClr.grid(column=0, row=2)
 
-        self.btnIgual = tk.Button(self, text="=", command=lambda: self.OnButtonIgualClick())
-        self.btnIgual.grid(column=3, row=5)
+btnBksp = Button(frame1, text="<-", command=lambda:OnButtonBkspClick())
+btnBksp.grid(column=1, row=2)
 
-        self.btnClr = tk.Button(self, text="CLR", command=lambda:self.OnButtonClrClick())
-        self.btnClr.grid(column=1, row=1)
-
-        self.btnBksp = tk.Button(self, text="<-", command=lambda:self.OnButtonBkspClick())
-        self.btnBksp.grid(column=2, row=1)
-
-        self.btnSair = tk.Button(self, text="Sair", fg ="gray", bg="red", command=self.destroy)
-        self.btnSair.grid(column=0, row=8)
+#btnSair = Button(frame2, text="Sair", fg ="gray", bg="red", command=root.destroy)
+#btnSair.grid(column=0, row=8)
         
-    def OnButtonNumClick(self,n):    
-        value = self.entrada.get()
-        if value.isdigit():
-            if n == 0:
-                if (value[-1] in ["+","-","/","*","."]): # para remover o zero a esquerda
-                    self.entrada.delete(0,tk.END)
-                    self.entrada.insert(tk.END,str(value))
-                else:
-                    self.entrada.insert(tk.END,str(n))
-                
-            else:    
-                if int(value) == 0:
-                    self.entrada.delete(0,tk.END)
-                    self.entrada.insert(tk.END,str(n))
-                else:
-                    self.entrada.insert(tk.END,str(n))
-        else:
-            self.entrada.insert(tk.END,str(n))
+def OnButtonNumClick(n):    
+    value =entrada.get()
+    if value.isdigit():
+        if n == 0:
+            if (value[-1] in ["+","-","/","*","."]): # para remover o zero a esquerda
+                entrada.delete(0,END)
+                entrada.insert(END,str(value))
+            else:
+                entrada.insert(END,str(n))
+            
+        else:    
+            if int(value) == 0:
+                entrada.delete(0,END)
+                entrada.insert(END,str(n))
+            else:
+                entrada.insert(END,str(n))
+    else:
+        entrada.insert(END,str(n))
 
         
-    def OnButtonIgualClick(self):
-        a = self.entrada.get()
-        self.entrada.delete(0,tk.END)
-        try:
-            self.entrada.insert(0,eval(a)) #eval() resolve qualquer tipo de equação.
-        except:
-            self.entrada.insert(0,"Err")
-        #Implementar o claculo de expressão, terá que ser feito por partes, pensei em fazer como vetor.
+def OnButtonIgualClick():
+    a =entrada.get()
+    entrada.delete(0,END)
+    try:
+        entrada.insert(0,eval(a)) #eval() resolve qualquer tipo de equação.
+    except:
+        entrada.insert(0,"Err")
         
+def OnButtonBkspClick():
+    value =entrada.get()
+    if len(value) == 1:
+        entrada.delete(0,END)
+        entrada.insert(0,str(0))
+    else:
+        entrada.delete(0,END)
+        entrada.insert(0,value[:-1])
 
-    def OnButtonBkspClick(self):
-        value = self.entrada.get()
-        if len(value) == 1:
-            self.entrada.delete(0,tk.END)
-            self.entrada.insert(0,str(0))
-        else:
-            self.entrada.delete(0,tk.END)
-            self.entrada.insert(0,value[:-1])
-    
-    def OnButtonClrClick(self):
-        self.entrada.delete(0,tk.END)
-        self.entrada.insert(0,str(0))
+def OnButtonClrClick():
+    entrada.delete(0,END)
+    entrada.insert(0,str(0))
 
-    def OnButtonOperClick(self,operador):
-        value = self.entrada.get()
-        if (value[-1] in ["+","-","/","*","."]):
-            self.entrada.delete(0,tk.END)
-            self.entrada.insert(0,value)
-        else:
-            self.entrada.insert(tk.END,operador)
+def OnButtonOperClick(operador):
+    value =entrada.get()
+    if (value[-1] in ["+","-","/","*","."]):
+        entrada.delete(0,END)
+        entrada.insert(0,value)
+    else:
+        entrada.insert(END,operador)
 
-
-if __name__ == "__main__":
-    app = App(None)
-    app.title("..:: Calculadora ::..")
-    app.mainloop()
+root.mainloop()
