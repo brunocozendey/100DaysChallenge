@@ -194,10 +194,9 @@ Ex
 >
 >#create the application
 >myapp = App()
-
->#
+>
 >#here are method calls to the window manager class
->#
+>
 >myapp.master.title("My Do-Nothing Application")
 >myapp.master.maxsize(1000, 400)
 >
