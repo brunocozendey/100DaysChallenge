@@ -192,16 +192,16 @@ Ex
 >        super().__init__(master)
 >        self.pack()
 >
-># create the application
+>#create the application
 >myapp = App()
 
 >#
-># here are method calls to the window manager class
+>#here are method calls to the window manager class
 >#
 >myapp.master.title("My Do-Nothing Application")
 >myapp.master.maxsize(1000, 400)
 >
-># start the program
+>#start the program
 >myapp.mainloop()
  
 ## Day 15
