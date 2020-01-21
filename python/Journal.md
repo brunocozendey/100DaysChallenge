@@ -305,4 +305,7 @@ Ex:
 
 ## Day 20
 
-* 
+* Hoje começarei a documentar o estudo de BI.
+* Fazer alguns dos exercícios do Kaggle e dar continuidade ao curso da Data Science Academy
+* Finalizei a criação de um modelo de predição de preços de casa. 
+* Todas as informações coloquei no jupyter_notebook, BI.ipynb
