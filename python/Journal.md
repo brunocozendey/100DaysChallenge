@@ -184,7 +184,7 @@ Neste arquivo irei colocar as atividades realizadas durante o desafio dos 100 di
 > No Tk o **wm** é um comando útil para interagir com o gerenciado de janelas. AS opções do wm permitem controlar coisas como titles, placement, icon, bitmaps e etc. No tkinter, esses comandos são implementados como métodos da classe Wm. 
 > Para obter uma janela na camada superior com um dado widget, é preciso apenas referenciar o widget ao mater Claro se o widget estiver empacotado dentro de um grame, o master não será representado como a janela superior. Para isso é necessário chamar o método _root(). Este méotodo começa com o underline para denotar o fato que essa função faz parte da implementação, e não ná funcionadlidade da interface Tk.
 
-Ex
+* Ex
 > import tkinter as tk
 >
 >class App(tk.Frame):
@@ -302,3 +302,7 @@ Ex:
 * Inseri menu na Calculadora
 * Criei os frames para alinhar bem os botões.
 * Finalizei a calculadora, como Calculadora2.py
+
+## Day 20
+
+* 
