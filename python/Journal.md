@@ -311,3 +311,36 @@ Ex:
 * Todas as informações coloquei no jupyter_notebook, BI.ipynb
 
 ## Day 21
+
+* Validação de modelo.
+> * A validação de um modelo, serve para verificar o qual bom ele é. E na maioria dos casos, para saber se um modelo é bom, precisamos medir sua acurácia.
+> * Muitas pessoas cometem o erro de utilizar os dados de treino para testar o modelo, mas isso é um erro. (Nota Bruno: Acredito que isso causará um viés de afirmação, pois se utilizar os mesmos dados treinados, na teoria o resultado seria o mesmo.)
+> * Existem diversas formas de resumir a qualidade de um modelo de uma forma compreensível, vamos começar pelo MAE - Mean Absolut Error.
+> * O erro significa: erro = Atual - previsto. Por exemplo se o valor atual de uma casa é 150.000 e o previsto era de 100.000, então o erro é de 50.000. Com a métrica MAE temos o valor absoluto de cada erro, convertendo cada erro em um valor positivo e podemos então pegar a média desses erros e essa será a medidade de qualidade. Isto é, na média nossas previsões estão X% fora da média.
+> * Então uma vez tendo um modelo, podemos calcular o MAE da seguinte forma:
+
+> from sklearn.metrics import mean_absolute_error
+> predicted_home_prices = melbourne_model.predict(X)
+> mean_absolute_error(y, predicted_home_prices) 
+
+> * Quando se utiliza os mesmos dados para treinar um modelo e par avaliá-lo, pode se ao fim obter uma acurácia muito baixa, pois o algoritmo de ML, irá encontrar padrões nos dados. Com isso, pode ser que no data set tenha um padrão que todas as casas de porta verde sejam mais caras, mas que essa influência de fato não exista e foi só uma coinscidência da amostra utilizada. Depois ao receber novos dados o modelo pode ter uma baixa acurácia, por causa deste padrão encontrado e validado.
+
+> * A biblioteca scikit-learn tem uma função chamada train_test_split, que divide o dataset em duas partes. E iremos utilizar parte dos dados para treinar e desenhar o modelo, e outra parte para validar e calcular o mean_absolut_error.
+
+> from sklearn.model_selection import train_test_split
+> #split data into training and validation data, for both features and target
+> #The split is based on a random number generator. Supplying a numeric value to
+> #the random_state argument guarantees we get the same split every time we
+> #run this script.
+> train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+> #Define model
+> melbourne_model = DecisionTreeRegressor()
+> #Fit model
+> melbourne_model.fit(train_X, train_y)
+>#get predicted prices on validation data
+>val_predictions = melbourne_model.predict(val_X)
+> print(mean_absolute_error(val_y, val_predictions))
+
+
+
+* Atualizado o Jupyter_notebook BI.
