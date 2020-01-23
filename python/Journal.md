@@ -341,6 +341,8 @@ Ex:
 >val_predictions = melbourne_model.predict(val_X)
 > print(mean_absolute_error(val_y, val_predictions))
 
+* Atualizado o Jupyter_notebook BI.
 
+## Day 22
 
 * Atualizado o Jupyter_notebook BI.
