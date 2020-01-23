@@ -345,4 +345,6 @@ Ex:
 
 ## Day 22
 
+* Experimentando diferentes modelos.
+* Criar um loop para verificar qual o melhor tamanho de árvore e melhor modelo utilizado.
 * Atualizado o Jupyter_notebook BI.
