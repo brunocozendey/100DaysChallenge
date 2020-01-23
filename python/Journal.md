@@ -347,4 +347,5 @@ Ex:
 
 * Experimentando diferentes modelos.
 * Criar um loop para verificar qual o melhor tamanho de árvore e melhor modelo utilizado.
-* Atualizado o Jupyter_notebook BI.
+* Troquei o nome do arquivo do Jupyter-notebook para Machine Learning Introduction.ipynb, pois é o nome da aula que estou fazendo no Kaggle.
+* Atualizado o Jupyter_notebook: Machine Learning Introduction.
