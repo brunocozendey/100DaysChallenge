@@ -356,3 +356,7 @@ Ex:
 * Exercícios Random Forest.
 * Finalizei a trilha de introdução a Machine Learning.
 * Atualizado o Jupyter_notebook: Machine Learning Introduction.
+
+## Day 24
+
+* 
