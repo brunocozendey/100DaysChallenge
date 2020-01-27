@@ -359,8 +359,13 @@ Ex:
 
 ## Day 24
 
-* 
+* Lendo e tentando entender sobre competições np Kaggle
 
 ## Day 25
 
-* 
+* Importanto dados da competição
+* Criei um novo notebook para estudar o preço das casa.
+
+## Day 26
+
+* Limpando dados e testando modelos.
