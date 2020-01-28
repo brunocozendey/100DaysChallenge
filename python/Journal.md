@@ -369,3 +369,8 @@ Ex:
 ## Day 26
 
 * Limpando dados e testando modelos.
+* Inseri o modelo e testei
+* Faltou criar o arquivo .csv
+
+## Day 27
+
