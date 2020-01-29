@@ -379,4 +379,5 @@ Ex:
 
 ## Day 28
 
-* 
+* Comecei o curso sobre Pandas.
+* Aprendi o básico de DataSet e serie e como usar o csv para importar arquivos.
