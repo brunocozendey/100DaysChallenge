@@ -374,3 +374,5 @@ Ex:
 
 ## Day 27
 
+* Finalizei o script para submissão
+* enviei o código para avaliação. 
