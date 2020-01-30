@@ -384,4 +384,6 @@ Ex:
 
 ## Day 29
 
-* 
+* Fiz exercícios com a biblioteca pandas.
+* Fiz os exercícios de indexiçao.
+* Fiz a aula de indexação e separação de dados.
