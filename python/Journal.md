@@ -387,3 +387,5 @@ Ex:
 * Fiz exercícios com a biblioteca pandas.
 * Fiz os exercícios de indexiçao.
 * Fiz a aula de indexação e separação de dados.
+* Faltou finalizar as anotaçÕes da aula.
+
