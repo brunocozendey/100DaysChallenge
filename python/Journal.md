@@ -389,3 +389,9 @@ Ex:
 * Fiz a aula de indexação e separação de dados.
 * Faltou finalizar as anotaçÕes da aula.
 
+## Day 30
+
+* Finalizei as anotações da aulas com indexação.
+
+
+
