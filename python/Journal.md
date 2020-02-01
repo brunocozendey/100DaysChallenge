@@ -393,5 +393,9 @@ Ex:
 
 * Finalizei as anotações da aulas com indexação.
 
+## Day 31
+
+* 
+
 
 
