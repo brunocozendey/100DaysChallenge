@@ -395,7 +395,10 @@ Ex:
 
 ## Day 31
 
-* 
+* Estudei e resumi os coneceitos de sumarização de dados.
+* Vi o uso dos operadores e do Map e Aplly.
+
+
 
 
 
