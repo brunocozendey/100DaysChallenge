@@ -399,7 +399,11 @@ Ex:
 * Vi o uso dos operadores e do Map e Aplly.
 
 ## Day 32
-*
+* Como estou viajando de ferias resolvi, apenas ler e resumir alguns artigos que estavam no pocket.
+
+* **Resumo sobre classes em Python
+
+> Um a classe associa dados (atributos) e operações (métodos) numa só estrutura. Um objeto é uma instância de uma classe. Ou seja, uma representação da classe. Por exemplo, Regis é uma instância de uma classe chamada Pessoa, mas a Pessoa é a classe que o representa de uma forma genérica. Se você criar um outro objeto chamado Fabio, esse objeto também será uma instancia da classe Pessoa.
 
 ## Day 33
 *
