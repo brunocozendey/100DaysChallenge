@@ -399,6 +399,11 @@ Ex:
 * Vi o uso dos operadores e do Map e Aplly.
 
 ## Day 32
+*
+
+## Day 33
+*
+
 
 
 
