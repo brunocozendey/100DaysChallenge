@@ -405,7 +405,44 @@ Ex:
 
 > Um a classe associa dados (atributos) e operações (métodos) numa só estrutura. Um objeto é uma instância de uma classe. Ou seja, uma representação da classe. Por exemplo, Regis é uma instância de uma classe chamada Pessoa, mas a Pessoa é a classe que o representa de uma forma genérica. Se você criar um outro objeto chamado Fabio, esse objeto também será uma instancia da classe Pessoa.
 
+> Exemplo de classe
+
+> class Nomedaclass:
+>           pass
+
+> Chamando um método dentro de uma classe:
+
+> class NomeClasse:
+>            def metodo(self,argumentos):
+>                   pass
+
+>Todo metodo criado dentro de uma classe >deve definir como primeiro parametro o self. 
+
+* Ler mais sobre o self: http://archive.is/cX2mq
+
+> Já o pass no python indica que o metodo não fará nada. 
+
+>Existem pelo menos duas formas diferentes >de trabalhar com os parâmetros de entrada. > Pode se definir o parâmetro apenas uma vez com um método especial do Python chamado __init__. Este método é chamado quando um objeto de uma classe é instânciado. Este método faz qualquer inicialização de objeto, ou seja, ele é o método "Inicializador" ou construtor da instancia.
+
+>class Pessoa:
+>
+>    def __init__(self, nome):
+>        self.nome = nome
+>
+>    def __str__(self):
+>        return self.nome
+>
+>
+>regis = Pessoa('Regis')
+>print(regis)
+>fabio = Pessoa('Fabio')
+>print(fabio)
+
+
 ## Day 33
+*
+
+## Day 34
 *
 
 
