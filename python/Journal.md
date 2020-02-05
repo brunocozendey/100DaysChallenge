@@ -440,7 +440,47 @@ Ex:
 
 
 ## Day 33
-*
+* Continuando estudo sobre classes
+
+>self.__class__ acessa a classe que criou a >instância, assim é possível acessar >diretamente qualquer atributo da classe. >Aqui poderia ser usado o nome do objeto >ex: User.seq, porém caso User fosse >herdado, o seq seria o de User e não da >classe filha.
+
+> Um @classmethod, é um metodo de classe >e faz mais sentido quando estamos >retornando informações da classe e não de >uma instância isolada.
+
+Exemplo de codigo utilizando classes:
+
+>#user.py
+>class User:
+>
+>    seq = 0
+>    objects = []
+>
+>   def __init__(self, nome, idade):
+>       self.id = None
+>        self.nome = nome
+>        self.idade = idade
+>
+>   def save(self):
+>       self.__class__.seq += 1
+>        self.id = self.__class__.seq
+>        self.__class__.objects.append(self)
+>
+>    def __str__(self):
+>        return self.nome
+>
+>    def __repr__(self):
+>        return '<{}: {} - {} - {}>\n'.format(self.__class__.__name__, self.id, >self.nome, self.idade)
+>
+>   @classmethod
+>    def all(cls):
+>        return cls.objects
+>
+>if __name__ == '__main__':
+>    u1 = User('Regis', 35)
+>    u1.save()
+>   u2 = User('Fabio', 20)
+>    u2.save()
+>    print(User.all())
+
 
 ## Day 34
 *
