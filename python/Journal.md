@@ -491,6 +491,9 @@ Exemplo de codigo utilizando classes:
 ## Day 36
 *
 
+## Day 37
+
+* Instalei uma ide no android para treinar durante a viagem! 
 
 
 
