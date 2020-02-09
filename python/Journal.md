@@ -496,7 +496,9 @@ Exemplo de codigo utilizando classes:
 * Instalei uma ide no android para treinar durante a viagem! 
 
 ## Day 38
-
 * 
+
+## Day 39
+*
 
 
