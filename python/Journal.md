@@ -519,3 +519,7 @@ Exemplo de codigo utilizando classes:
 ## Day 44
 
 * Verificar se o dia esta correto.
+
+## Day 45
+
+* 
