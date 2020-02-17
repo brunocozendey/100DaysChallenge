@@ -492,7 +492,11 @@ Exemplo de codigo utilizando classes:
 * Atualizei o Jupyter notebook do pandas.
 
 ## Day 36
-*
+
+* Comecei a estudar um pouco de webscrapping
+* Criei o arquivo web-scraping.py para retirar informações de ações do site fundamentus. 
+* Já consigo coletar o título das ações, já possuo uma lista de todos os ticks de ações, agora é organizar de uma melhor forma.
+
 
 ## Day 37
 
@@ -524,5 +528,9 @@ Exemplo de codigo utilizando classes:
 * Verificar se o dia esta correto.
 
 ## Day 45
+
+* 
+
+## Day 46
 
 * 
