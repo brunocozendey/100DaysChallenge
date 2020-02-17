@@ -483,10 +483,13 @@ Exemplo de codigo utilizando classes:
 
 
 ## Day 34
-*
+
+* Reli sobre o uso de Map e algumas funções do Panda.
 
 ## Day 35
-*
+
+* Fiz os exercícios de Summary FUnctions e Map
+* Atualizei o Jupyter notebook do pandas.
 
 ## Day 36
 *
