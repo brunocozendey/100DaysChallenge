@@ -503,7 +503,9 @@ Exemplo de codigo utilizando classes:
 * Instalei uma ide no android para treinar durante a viagem! 
 
 ## Day 38
-* 
+* Finalizei a leitura do módulo de ordenação e agrupamento do Pandas.
+* Inciei os exercícios.
+* Atualizei o jupyter-notebook.
 
 ## Day 39
 *
