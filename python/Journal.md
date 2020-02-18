@@ -508,7 +508,10 @@ Exemplo de codigo utilizando classes:
 * Atualizei o jupyter-notebook.
 
 ## Day 39
-*
+
+* Finalizei os exercícios de ordenação e agrupamento.
+* Atualizei o jupyter-notebook.
+
 
 ## Day 40
 *
