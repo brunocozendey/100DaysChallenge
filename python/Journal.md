@@ -535,4 +535,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 46
 
-* 
+*
+
+## Day 47
+*
