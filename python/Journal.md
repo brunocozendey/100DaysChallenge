@@ -514,11 +514,13 @@ Exemplo de codigo utilizando classes:
 
 
 ## Day 40
-*
+
+* Finalizei a leitura do tutorial de tipos de dados e valores faltantes.
+* Atualizei o Jupyter-notebook.
 
 ## Day 41
 
-* 
+* Fiz os exercícios de tipos de dados e valores faltantes.
 
 ## Day 42
 
@@ -546,3 +548,7 @@ Exemplo de codigo utilizando classes:
 ## Day 48
 
 * 
+
+## Day 49
+
+*
