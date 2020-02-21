@@ -524,15 +524,18 @@ Exemplo de codigo utilizando classes:
 
 ## Day 42
 
-*
+* Finalizei a leitura do tutorial de renomeando e combinando
+* Atualizei o Jupyter-notebook.
 
 ## Day 43
 
-*
+* Fiz os exercícios de renomeando e combinando.
+* Finalizado o módulo sobre pandas no Kaggle.
 
 ## Day 44
 
 * Verificar se o dia esta correto.
+* Fiz exercícios de python do curso do Kaggle.
 
 ## Day 45
 
@@ -552,3 +555,7 @@ Exemplo de codigo utilizando classes:
 ## Day 49
 
 *
+
+## Day 50
+
+* 
