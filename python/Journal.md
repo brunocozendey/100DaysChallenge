@@ -539,11 +539,11 @@ Exemplo de codigo utilizando classes:
 
 ## Day 45
 
-* 
+* Finalizei os exercícios de Loops e compreensao de listas do curso de Python do Kagggle.
 
 ## Day 46
 
-*
+*  Finalizei os exercícios de string e dicionário do Curso de Python do Kaggle.
 
 ## Day 47
 *
@@ -559,3 +559,7 @@ Exemplo de codigo utilizando classes:
 ## Day 50
 
 * 
+
+## Day 51
+
+*
