@@ -539,7 +539,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 45
 
-* 
+* Iniciei os últimos exercícios sobre Móudulo do Python.
 
 ## Day 46
 
