@@ -543,18 +543,20 @@ Exemplo de codigo utilizando classes:
 
 ## Day 46
 
-*
+*  Finalizei os exercícios de string e dicionário do Curso de Python do Kaggle.
 
 ## Day 47
-*
+
+* Iniciei os exercícios d Python sobre módulos do Curso de Python do Kaggle.
 
 ## Day 48
 
-* 
+* Finalizei os exercícios d Python sobre módulos do Curso de Python do Kaggle.
 
 ## Day 49
 
-*
+* iniciei a leitura dos tutoriais sobre módulos do Curso de Python do Kaggle.
+* Atualizei Jupyter Notebook.
 
 ## Day 50
 
@@ -569,5 +571,9 @@ Exemplo de codigo utilizando classes:
 *
 
 ## Day 53
+
+*
+
+## Day 54
 
 *
