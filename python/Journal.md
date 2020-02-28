@@ -565,7 +565,9 @@ Exemplo de codigo utilizando classes:
 
 ## Day 51
 
-*
+* Finalizei a leitira dos módulos de strings e dicionários do Curso de Python do Kaggle.
+* Atualizei Jupyter Notebook.
+
 
 ## Day 52
 
