@@ -560,22 +560,25 @@ Exemplo de codigo utilizando classes:
 
 ## Day 50
 
-* Finalizei a leitira dos módulos de lista e compreensão de lista do Curso de Python do Kaggle.
+* Finalizei a leitura dos módulos de lista e compreensão de lista do Curso de Python do Kaggle.
 * Atualizei Jupyter Notebook.
 
 ## Day 51
 
-* Finalizei a leitira dos módulos de strings e dicionários do Curso de Python do Kaggle.
+* Finalizei a leitura dos módulos de strings e dicionários do Curso de Python do Kaggle.
 * Atualizei Jupyter Notebook.
 
 
 ## Day 52
 
-*
+* Testes com a API do Gmail, sem sucesso. Apareceu a tela de login mas a aplicação ficou travado. 
+* Investigar mais depois sobre o funcionamento da API.
 
 ## Day 53
 
-*
+* Testes com a biblioteca IMAP, aparentemente está funcionando, requer um pouco mais de estudo em como capturar determinado conteúdo.
+* Usar a função de pegar um elemento de texto dentro de um HTML e acredito que feche a extração de dados. 
+* Próximo passo é colocar em um .csv ou banco de dados e trabalhar com essas informações.
 
 ## Day 54
 
@@ -592,3 +595,5 @@ Exemplo de codigo utilizando classes:
 ## Day 57
 
 * 
+
+## Day 58
