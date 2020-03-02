@@ -5,7 +5,7 @@ import email
 
 ORG_EMAIL   = "@gmail.com"
 FROM_EMAIL  = "brechotech" + ORG_EMAIL
-FROM_PWD    = "bruno3001"
+FROM_PWD    = ""
 SMTP_SERVER = "imap.gmail.com"
 SMTP_PORT   = 993
 
