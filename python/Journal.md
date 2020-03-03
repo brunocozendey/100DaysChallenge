@@ -582,7 +582,8 @@ Exemplo de codigo utilizando classes:
 
 ## Day 54
 
-*
+* Finalzei o curso de Python do Kaggle.
+* Atualizei o Jupyter Notebook.
 
 ## Day 55
 
