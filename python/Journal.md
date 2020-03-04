@@ -587,7 +587,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 55
 
-*
+* 
 
 ## Day 56
 
@@ -602,3 +602,9 @@ Exemplo de codigo utilizando classes:
 *
 
 ## Day 59
+
+*
+
+## Day 60
+
+* 
