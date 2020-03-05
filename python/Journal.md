@@ -587,11 +587,12 @@ Exemplo de codigo utilizando classes:
 
 ## Day 55
 
-* 
+* Aprendi um pouco sobre a TF-IDF.
+* Atualizei o Juoyer notebook.
 
 ## Day 56
 
-*
+* Melhorei os Scores da primeira competição em relação aos tweets de desastre.
 
 ## Day 57
 
@@ -607,4 +608,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 60
 
+* 
+
+## Day 61
 * 
