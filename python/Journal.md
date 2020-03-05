@@ -596,7 +596,10 @@ Exemplo de codigo utilizando classes:
 
 ## Day 57
 
-* 
+* Fiz algumas tentativas para melhorar o ranking, mas sem sucesso. ALguns módulos do python não funcionaram muito bem no Jupyter.
+* Eviei para submissão mais uma tentativa e subi no ranking para 2700 mas ainda preciso melhorar.
+* Estou decidindo mudar meu challange para javascript e ou java, pois é o foco maior da área que estou tentando, de acordo com o curso que estou fazendo, então talvez faça mais sentido, voltar para o python depois que terminar este curso, talvez minha última missão de pyhon será terminar o mail scrapper que estou precisando urgente. Mas devo largar o Kaggle um pouco.
+ 
 
 ## Day 58
 
