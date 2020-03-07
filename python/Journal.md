@@ -603,11 +603,13 @@ Exemplo de codigo utilizando classes:
 
 ## Day 58
 
-*
+* Fiz alguns testes com a aplicação do Gmail, tentando capturar o HTML do E-mail, mas sem sucesso. 
+* Coloquuei a sena em um arquivo externo, para poder subir o arquivo para o Github com segurança.
 
 ## Day 59
 
-*
+* Comecei a ler sobre como usar o google api. 
+* Fiz alguns testes com a api do GMAIL mas sem sucesso, contiua sem sair da tela de login.\ 
 
 ## Day 60
 
@@ -617,4 +619,8 @@ Exemplo de codigo utilizando classes:
 * 
 
 ## Day 62
+*
+
+Day 63
+
 *
