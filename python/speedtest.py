@@ -1,6 +1,5 @@
 import speedtest
 
-
 def test():
     s = speedtest.Speedtest()
     s.get_servers()
@@ -34,6 +33,7 @@ def main():
         print('Download: {:.2f} Kb/s\n'.format(d / 1024))
         print('Upload: {:.2f} Kb/s\n'.format(u / 1024))
         print('Ping: {}\n'.format(p))
+    sleep()
 
 
 if __name__ == '__main__':
