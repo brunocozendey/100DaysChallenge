@@ -616,6 +616,7 @@ Exemplo de codigo utilizando classes:
 * Fiz um primeiro script com o speedtest para caputar os logs de conexào aqui de casa.
 
 ## Day 61
+
 * 
 
 ## Day 62
@@ -633,5 +634,9 @@ Exemplo de codigo utilizando classes:
 * P
 
 ## Day 66
+
+* 
+
+## Day 67
 
 * 
