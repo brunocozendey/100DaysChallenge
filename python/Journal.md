@@ -617,10 +617,10 @@ Exemplo de codigo utilizando classes:
 
 ## Day 61
 
-* 
+* Estudei sobre o beatifulsoup
 
 ## Day 62
-*
+* Instalei e testei o script de email com beatiful soup, mas sem sucesso.
 
 ## Day 63
 

@@ -3,7 +3,7 @@ import time
 import imaplib
 import email
 from lxml import html
-
+from bs4 import BeautifulSoup
 
 
 file = open("/home/bruno/Desktop/senha.txt","r")
@@ -31,7 +31,7 @@ def read_email_from_gmail():
         mail_ids = data[0]
 
         id_list = mail_ids.split()   
-        first_email_id = int(id_list[-1])
+        first_email_id = int(id_list[0])
         #latest_email_id = int(id_list[-1])
         latest_email_id = int(id_list[-1])
 
@@ -45,8 +45,9 @@ def read_email_from_gmail():
                     print 'From : ' + email_from + '\n'
                     print 'Subject : ' + email_subject + '\n'
                     print(msg)
-                    print(msg.xpath('/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/table/tr/td[1]/div[2]/div[2]/div/div[3]/div/div/div/div/div/div[1]/div[2]/div[3]/div[3]/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr[4]/td[2]/table/tbody/tr[2]/td/table[3]/tbody/tr/td/table/tbody/tr/td[3]'))
-
+                    #print(msg.xpath('/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/table/tr/td[1]/div[2]/div[2]/div/div[3]/div/div/div/div/div/div[1]/div[2]/div[3]/div[3]/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr[4]/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[1]/td'))
+                    soup = BeautifulSoup(msg, 'html.parser')
+                    print(soup.title)
 
 
     except Exception, e:
