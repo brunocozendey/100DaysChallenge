@@ -624,14 +624,15 @@ Exemplo de codigo utilizando classes:
 
 ## Day 63
 
-*
+* Estudei mais um pouco sobre o Beatiful Soup
 
 ## Day 64
-*
+
+* Consegui capturar as informações do email, através do <td> mas as informações estão dobradas.
 
 ## Day 65
 
-* P
+* 
 
 ## Day 66
 
@@ -643,3 +644,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 68
 * 
+
+## Day 69
+
+*
