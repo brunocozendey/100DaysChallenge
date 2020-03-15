@@ -632,11 +632,11 @@ Exemplo de codigo utilizando classes:
 
 ## Day 65
 
-* 
+* Fiz o algoritmo de recursão de Fibonacci, mostrando a contagem de recursões. 
 
 ## Day 66
 
-* 
+* Fiz o algoritmo de recursão de Fatorial, mostrando a contagem de recursões.
 
 ## Day 67
 
