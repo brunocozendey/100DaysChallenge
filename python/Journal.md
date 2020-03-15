@@ -648,3 +648,11 @@ Exemplo de codigo utilizando classes:
 ## Day 69
 
 *
+
+## Day 70
+
+* 
+
+## Day 71
+
+*
