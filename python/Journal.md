@@ -640,7 +640,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 67
 
-*
+* Instalei e estudei o DynamoDB
 
 ## Day 68
 * 
@@ -656,3 +656,7 @@ Exemplo de codigo utilizando classes:
 ## Day 71
 
 *
+
+## Day 72
+
+* 
