@@ -640,18 +640,21 @@ Exemplo de codigo utilizando classes:
 
 ## Day 67
 
-* Instalei e estudei o DynamoDB
+* Instalei e estudei o DynamoDB localmente.
 
 ## Day 68
-* 
+
+* Instalaei o aws-cli
+* Configurei o aws-cli
 
 ## Day 69
 
-*
+* Criei o primeiro script em python para criar tabelas no Dynamo
 
 ## Day 70
 
-* 
+* Inseri dados na tabela do dynamo via python. Inseri todos os dados do Imdb disponível em um JSON
+* Inseri item manualmente no Dynamo.
 
 ## Day 71
 
