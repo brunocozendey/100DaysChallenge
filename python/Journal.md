@@ -660,3 +660,7 @@ Exemplo de codigo utilizando classes:
 ## Day 72
 
 * 
+
+## Day 73
+
+* 
