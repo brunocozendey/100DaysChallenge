@@ -664,8 +664,12 @@ Exemplo de codigo utilizando classes:
 ## Day 72
 
 * Incrementar e decrementar valores do Dynamo.
-* Atualizar os valores atômicos do Dynamo.
+* Atualizar os valores atômicosbru do Dynamo.
 
 ## Day 73
+
+* 
+
+## Day 74
 
 * 
