@@ -658,11 +658,13 @@ Exemplo de codigo utilizando classes:
 
 ## Day 71
 
-*
+* Aprendi a retornar valores do Dynamo.
+* Apreni a atualizar os valores do Dynamo.
 
 ## Day 72
 
-* 
+* Incrementar e decrementar valores do Dynamo.
+* Atualizar os valores atômicos do Dynamo.
 
 ## Day 73
 
