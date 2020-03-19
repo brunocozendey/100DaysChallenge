@@ -676,3 +676,6 @@ Exemplo de codigo utilizando classes:
 
 * A principal diferença entre o Scan e o Query, é que o Scan faz uma varredura inteira na tabela.
 * Estão todas as funções em um único  arquivo python. 
+
+## Day 75
+
