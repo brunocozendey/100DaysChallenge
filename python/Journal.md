@@ -668,8 +668,11 @@ Exemplo de codigo utilizando classes:
 
 ## Day 73
 
-* 
+* Estudei como deletar dados de uma tabela.
+* Retornei dados utilizando o Query
+* Retornei dados utilizando o scann.  
 
 ## Day 74
 
-* 
+* A principal diferença entre o Scan e o Query, é que o Scan faz uma varredura inteira na tabela.
+* Estão todas as funções em um único  arquivo python. 
