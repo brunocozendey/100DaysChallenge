@@ -316,3 +316,8 @@ else:
 
         for i in response['Items']:
             print(json.dumps(i, cls=DecimalEncoder))
+
+    
+    # Para deletar a tabela basta descomentar a linha abaixo.
+    # table.delete()
+    

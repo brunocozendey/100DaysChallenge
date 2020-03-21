@@ -679,8 +679,14 @@ Exemplo de codigo utilizando classes:
 
 ## Day 75
 
-* 
+* Aprendi a deleção de tabela.
 
 ## Day 76
+
+* Estudei um pouco sobre a AWS CLI.
+* Adicionei informações ao meu Evernote sobre. 
+* Aprendi a usar o cli para criar tabelas e adicionar items a tabela.
+
+## Day 77
 
 * 
