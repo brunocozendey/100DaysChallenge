@@ -689,10 +689,19 @@ Exemplo de codigo utilizando classes:
 
 ## Day 77
 
-*
+* Inicei o curso da semana Omnistack.
+* Comecei a fazer a parte de backend.
+* Configurei projeto de Node.JS
 
 ## Day 78
-
-* add 78
+* Continuei a parte de Backend.
+* Finalizei com a parte de CURL.
 
 ## Day 79
+
+* Iniciei o estudo de front-end
+* Instalei o React e comecei a aprender.
+
+## Day 80
+
+## Day 81
