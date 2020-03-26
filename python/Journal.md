@@ -703,5 +703,15 @@ Exemplo de codigo utilizando classes:
 * Instalei o React e comecei a aprender.
 
 ## Day 80
+* Aprendi um pouco mais sobre as rotas
+* Criei um arquivo para rotas e como exportar um arquivo.
+* Comecei a ver a integraçao com o BD.
+* E instalei o Knex que auxilia no desenvolvimento de bd.
 
 ## Day 81
+
+*
+
+## Day 82
+
+*
