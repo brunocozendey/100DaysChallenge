@@ -710,12 +710,16 @@ Exemplo de codigo utilizando classes:
 
 ## Day 81
 
-* 
+* Aprendi conceitos básico do react
+* Como limpar o código antes de inciiar um novo projeto 
 
 ## Day 82
 
-*
+* Aprendi sobre JSX
+* Atributos dentro do React
+* Estados
 
 ## Day 83 
 
-*
+* Fiz uma página com um contador incremental usando o React.
+* 
