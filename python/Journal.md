@@ -726,4 +726,10 @@ Exemplo de codigo utilizando classes:
 
 ## Day 84
 
-*
+* Continuei aprendendo sobre react.
+* Usar pacote de ícones.
+* Criar como se fosse uma tag HTML, um componente.
+
+## Day 85
+
+
