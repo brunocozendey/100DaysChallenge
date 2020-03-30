@@ -732,4 +732,13 @@ Exemplo de codigo utilizando classes:
 
 ## Day 85
 
+* Finalizei a parte de Front.
+* Ligação entre Fron e Backend.
+* Instalei a parte de Mobile, testando já no celular.
+* Aprendi sobre o Expo, que ajudar no mobile.
+
+## Day 86
+
+* 
+
 
