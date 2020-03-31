@@ -739,6 +739,15 @@ Exemplo de codigo utilizando classes:
 
 ## Day 86
 
-* 
+* Fiz a integração do mobile com o backend.
+* Puxando os casos e exibindo.
+* Criado botão para e-mail e whatsapp.
+
+## Day 87
+
+* Finalizei a aplicação mobile com paginação infinita.
+* publicado app mobile no git.
+
+
 
 
