@@ -756,6 +756,7 @@ Exemplo de codigo utilizando classes:
 
 ## Day 89
 
-* 
+* Finalizei a etapa de testes.
+* Criei um banco de dados para teste.  
 
 
