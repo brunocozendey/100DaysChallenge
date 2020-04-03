@@ -750,7 +750,9 @@ Exemplo de codigo utilizando classes:
 
 ## Day 88
 
-* 
+* Iniciei a parte de testes.
+* Descobri sobre a criação de pastas e de arquivos TDD.
+* Fiz o primeiro teste unitário. 
 
 ## Day 89
 
