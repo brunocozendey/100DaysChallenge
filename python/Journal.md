@@ -761,8 +761,11 @@ Exemplo de codigo utilizando classes:
 
 ## Day 90
 
-*  
+*  Instalei o node-red
+* Instalei o node de e-mail
 
 ## Day 91
+* Estou usando o node-red para fzer a busca nos e-mails e gerar um csv com os emails se alemão.
+* O desenvolvimento foi muito rápido, e já consigo obter todas as informações que preciso dos e-mails.
 
 
