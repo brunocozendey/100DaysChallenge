@@ -768,4 +768,7 @@ Exemplo de codigo utilizando classes:
 * Estou usando o node-red para fzer a busca nos e-mails e gerar um csv com os emails se alemão.
 * O desenvolvimento foi muito rápido, e já consigo obter todas as informações que preciso dos e-mails.
 
+## Day 92
+
+*
 
