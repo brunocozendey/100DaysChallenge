@@ -778,5 +778,9 @@ Exemplo de codigo utilizando classes:
 
 ## Day 94
 
-* 
+* Finalizei no formato csv a exportaçao com o node-red dos emails.
+* Limpei os emails com o pandas para tirar as linhas duplicadas. 
+* Exportei um .csv com linhas únicas.
+
+
 
