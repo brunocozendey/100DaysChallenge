@@ -776,4 +776,7 @@ Exemplo de codigo utilizando classes:
 
 * Consegui rodar no node-red gerando um csv.
 
+## Day 94
+
+* 
 
