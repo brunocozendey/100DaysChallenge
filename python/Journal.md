@@ -770,5 +770,10 @@ Exemplo de codigo utilizando classes:
 
 ## Day 92
 
-* Tentei  
+* Removi os espaços mas ainda ficou aparecendo o undefined.
+
+## Day 93
+
+* Consegui rodar no node-red gerando um csv.
+
 
