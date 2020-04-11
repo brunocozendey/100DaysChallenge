@@ -784,5 +784,10 @@ Exemplo de codigo utilizando classes:
 
 ## Day 95
 
-* 
+* Testei o node do Insta, mas não funcionou legal. 
+* Dei um gás na Quarentena Dev, 
+
+## Day 96
+
+* Finalizei a quarentena Dev, que mesmo sendo bem básico foi legal pra ver o JS+CSS+HTML
 
