@@ -791,3 +791,4 @@ Exemplo de codigo utilizando classes:
 
 * Finalizei a quarentena Dev, que mesmo sendo bem básico foi legal pra ver o JS+CSS+HTML
 
+
