@@ -791,4 +791,14 @@ Exemplo de codigo utilizando classes:
 
 * Finalizei a quarentena Dev, que mesmo sendo bem básico foi legal pra ver o JS+CSS+HTML
 
+## Day 97
+
+* Fiz o primeiro app utilizando Java no backaend.
+* Aula do Dev Scholl.
+
+## Day 98
+
+* Estudei um pouco mais sobre  o Instagram API. 
+* Nao tive muito avanço com a API vou tentar fazer por web scralling.
+
 
