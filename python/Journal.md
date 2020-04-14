@@ -800,5 +800,9 @@ Exemplo de codigo utilizando classes:
 
 * Estudei um pouco mais sobre  o Instagram API. 
 * Nao tive muito avanço com a API vou tentar fazer por web scralling.
+* Comecei a instalar a interface Web no NodeMCU.
 
+## Day 99
+
+*
 
