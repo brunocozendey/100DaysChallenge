@@ -804,5 +804,11 @@ Exemplo de codigo utilizando classes:
 
 ## Day 99
 
-*
+* Comecei a desenvolver o front do meu projeto da máquina de lavar.
+* Mais testes com o nodeMCU
+
+## Day 100
+
+* Fim do desafio, mas vou continuar. Talvez devesse focar em uma única linguagem ou projeto, tive diversas idas e vindas de linguagens.
+* Termino fazendo o front do meu projeto da máquina de lavar e assitindo uma live e codando com o Java springboot.
 
