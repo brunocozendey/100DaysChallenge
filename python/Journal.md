@@ -812,3 +812,9 @@ Exemplo de codigo utilizando classes:
 * Fim do desafio, mas vou continuar. Talvez devesse focar em uma única linguagem ou projeto, tive diversas idas e vindas de linguagens.
 * Termino fazendo o front do meu projeto da máquina de lavar e assitindo uma live e codando com o Java springboot.
 
+## Day 101
+
+* Terminei o Layout da máquina de lavar.
+* Estudei uma forma de comunicar a página com o arduino.
+
+
